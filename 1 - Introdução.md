@@ -1,0 +1,6 @@
+**Introdução**
+
+Eu perdi a muito tempo a conta de quanto sites eu fiz. Você deve pensar que após eu ter feito algumas centenas de sites eu descobri "a única melhor maneira" de fazer sites. Eu não acho que exista uma única maneira certa. O que eu descobri foram técnicas para deixar o CSS mais organizado e estruturado, levando à um código mais fácil de construir e mais fácil de manter.
+Eu tenho analizado meu processo (e o processo dos desenvolvedores que me rodeiam) e venho descobrindo a melhor maneira de estruturar código de projetos de larga escala. Os conceitos estavam vagamente lá com os menores sites que eu já trabalhei mas se tornaram mais concretos conforme fui trabalhando em projetos de complexidade crescente.
+Pequenos sites frequentemente não possuem as mesmas dores que sites ou equipes de trabalho grandes; pequenos sites não são tão complexos e não mudam com tanta frequencia. De qualquer maneira, o que irei descrever nesse livro é uma abordagem que funciona bem tanto para sites pequenos ou grandes.
+SMACSS é mais um style guide do que um framework inflexível. Não há nenhum library aqui para você baixar ou instalar. O SMACSS é uma maneira de examinar seu processo de design e como uma forma de encaixar esses frameworks inflexíveis em um processo de pensamento flexível
