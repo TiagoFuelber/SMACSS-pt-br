@@ -22,3 +22,9 @@ Uma boa parte do propósito de categorizar as coisas é identificar padrões que
 **Regras de base** são os padrões. Elas são quase que exclusivamente seletores de elementos únicos mas podem incluir seletores de atributo, pseudo-seletores, child-selectors ou sibling selectors. Essencialmente, o que um estilo de base quer dizer é que não importa onde esse elemento apareça ele irá parecer da mesma forma.
 
 <img src="images/Base.PNG">
+
+**Regras de layout** dividem a página em seções. Um Layout engloba um ou mais módulos.
+
+**Módulos** são as partes reutilizáveis e modulares do seu design. São as seções de links, a barra lateral, a lista de produtos e assim por diante.
+
+**Regras de estado** são maneiras de descrever como os seus módulos ou layouts irão parecer em um determinado estado. O item está escondido ou expandido? Está ativo ou inativo? Regras de estado descrevem como o seu módulo irá parecer em telas pequenas ou grandes. Elas também são formas de descrever como o seu módulo irá parecer em views diferentes como a Home ou uma página interna.
