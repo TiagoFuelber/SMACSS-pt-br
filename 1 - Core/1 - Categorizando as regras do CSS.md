@@ -21,4 +21,4 @@ Uma boa parte do propósito de categorizar as coisas é identificar padrões que
 
 **Regras de base** são os padrões. Elas são quase que exclusivamente seletores de elementos únicos mas podem incluir seletores de atributo, pseudo-seletores, child-selectors ou sibling selectors. Essencialmente, o que um estilo de base quer dizer é que não importa onde esse elemento apareça ele irá parecer da mesma forma.
 
-![Estilos base](/images/Base.jpg)
+![Estilos base](../../1 - Core/images/Base.jpg)
