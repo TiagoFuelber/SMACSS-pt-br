@@ -19,12 +19,30 @@ Para cada categoria existem algumas orientações que devem ser aplicadas. Essas
 
 Uma boa parte do propósito de categorizar as coisas é identificar padrões que se repetem no nosso design. Repetição resulta em menos código, manutenção mais fácil, e maior consistência na experiência do usuário. Você só tem a ganhar. Algumas exceções à regra até podem trazer vantagem mas devem ser justificadas.
 
-**Regras de base** são os padrões. Elas são quase que exclusivamente seletores de elementos únicos mas podem incluir seletores de atributo, pseudo-seletores, child-selectors ou sibling selectors. Essencialmente, o que um estilo de base quer dizer é que não importa onde esse elemento apareça ele irá parecer da mesma forma.
+**Regras de Base** são os padrões. Elas são quase que exclusivamente seletores de elementos únicos mas podem incluir seletores de atributo, pseudo-seletores, child-selectors ou sibling selectors. Essencialmente, o que um estilo de Base quer dizer é que não importa onde esse elemento apareça ele irá parecer da mesma forma.
 
 <img src="images/Base.PNG">
 
-**Regras de layout** dividem a página em seções. Um Layout engloba um ou mais módulos.
+**Regras de Layout** dividem a página em seções. Um Layout engloba um ou mais Módulos.
 
 **Módulos** são as partes reutilizáveis e modulares do seu design. São as seções de links, a barra lateral, a lista de produtos e assim por diante.
 
-**Regras de estado** são maneiras de descrever como os seus módulos ou layouts irão parecer em um determinado estado. O item está escondido ou expandido? Está ativo ou inativo? Regras de estado descrevem como o seu módulo irá parecer em telas pequenas ou grandes. Elas também são formas de descrever como o seu módulo irá parecer em views diferentes como a Home ou uma página interna.
+**Regras de Estado** são maneiras de descrever como os seus Módulos ou Layouts irão parecer em um determinado Estado. O item está escondido ou expandido? Está ativo ou inativo? Regras de Estado descrevem como o seu Módulo irá parecer em telas pequenas ou grandes. Elas também são formas de descrever como o seu Módulo irá parecer em views diferentes como a Home ou uma página interna.
+
+E finalmente, **regras de Tema** são similares as regras de Estado pois elas descrevem como Módulos e Layouts devem se parecer. A maioria dos sites não precisam de uma camada de tema, mas é bom saber que ela existe.
+
+**Regras de nomeação** 
+
+Ao separar as regras em 5 categorias, usar uma conveção de nomes é bom para entender imediatamente à qual categoria um estilo pertence e o seu papel no scopo da página. Em projetos grandes, é mais comum ter os estilos divididos em diversos arquivos. Nesses casos, as convenções de nomes também facilitam saber em qual arquivo um estilo se encontra.
+
+Eu gosto de usar um prefixo para diferenciar entre regras de Layout, Estado, ou Módulo. Para leyout eu uso `l-` mas `layout-` também funciona. Usar prefixos como `grid-` também ajudam a separar estilos de Layout dos outros estilos com mais clareza. Para regras de Estado eu gosto de `is-` como por exemplo em `is-hidden` ou `is-collapsed`. Isso ajuda a descrever as coisas de uma maneira fácil de ler.
+
+Os Módulos serão a maior parte de qualquer projeto. Por esse motivo, se cada módulo tivesse um prefixo `module-` seria desnecessáriamente verboso. Módulos apenas usam o nome do próprio módulo.
+
+<img src="images/nome-modulos.PNG">
+
+Elementos relacionados dentro de um módulo usam o nome base como prefixo. Neste site, os exemplos de código usam `.exm` e as legandas usam `.exm-caption`. Eu posso instantaneamente ver a classe da legenda e perceber que ela está ligada aos exemplos de código e onde encontrar os estilos dela. 
+
+Módulos que são uma variação de outro módulo também devem usar o nome do módulo base como prefixo. Sub-classes são abordadas com mais detalhes no capítulo das regas de Módulos. 
+
+A convenção de nomes será usada nesse livro. Como a maioria das coisas que eu citei aqui, nãos se sinta obrigado a seguir essas regras obrigatoriamente. Faça uma conveção, documente-a, e siga-a fielmente. 
