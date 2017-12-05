@@ -19,9 +19,23 @@ No exemplo de Layout, a classe `.l-flipped` é aplicada em um elemento de nível
 
 Nesse exemplo a classe `.l-fixed` modifica o design para mudar de layout fluído (usando porcentagens) para layout fixo (usando pixels).
 
+Outra coisa que você pode notar no exemplo do Layout é a convenção de nomes que eu usei. As declarações que usam seletores de ID estão nomeadas com precisão e sem usar prefixos. Os seletores de classe, no entanto usam um prefixo `l-`. Isso ajuda a identificar facilmente o propósito desses estilos e separá-los de modos e estados. Regras de Layout são a única categoria principal que utiliza seletores de ID, se você decidir que quer usar IDs. Se você quiser colocar prefixos nos seus IDs, você pode, mas não é tão necessário. 
 
+**Usando IDs** 
 
+Para deixar claro, usar IDs no seu HTML pode ser bom e em alguns casos, absolutamente necessário. Por exemplo, eles são ganchos eficientes para o seu Javascript. Para o CSS, no entanto, IDs não são necessários pois a diferença de performance entre ID e classe é quase nula e seu código pode ficar complicado por causa do aumento de especificidade. 
 
+**Exemplos de Layout**
+
+Teoria é uma coisa e prática é outra. Vamos dar uma olhada em um site para entender o que é layout e o que é módulo. 
+
+<img src="images/layout-exemplo.PNG" alt="">
+
+Ao dar uma olhada no site da CNN, há vários padrões que ocorrem me vários sites. Por exepmlo, há um cabeçalho, uma barra de navegação, uma área de conteúdo e um rodapé (que não aparece na imagem);
+
+<img src="images/layout-patterns.PNG" alt="">
+
+No momento que estou escrevendo este texto, este site segue de maneira bem próxima essa
 
 Notas de rodapé:
 1 - A palavra usada no original é Layout que traduzi como dispor (...lay items out on a page...).
