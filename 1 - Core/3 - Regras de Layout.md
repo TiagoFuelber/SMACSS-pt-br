@@ -35,7 +35,25 @@ Ao dar uma olhada no site da CNN, há vários padrões que ocorrem me vários si
 
 <img src="images/layout-patterns.PNG" alt="">
 
-No momento que estou escrevendo este texto, este site segue de maneira bem próxima essa
+No momento que estou escrevendo este texto, este site segue de maneira bem próxima essa divisão e atribui ID para essas seções pricipais. 
+
+<img src="images/estrutura-css.PNG" alt="">
+
+Isso foi direto, e eu tenho certeza que você deve estar pensando, "É sério? Você está me ensinando a fazer isso?". Vamos dar uma olhada em outra parte da página. 
+
+<img src="images/featured.PNG" alt="">
+
+Dando uma olhada na seção Featured, vemos um grid com notícias. A marcação HTML que a CNN usa é uma `div` container com `div`s filhas. Eu teria feito isso, provavelmente com uma unordered list (ul). E vamos fazer dessa maneira mesmo. 
+
+<img src="images/featured-exemplo.PNG" alt="">
+
+Não considerando a abordagem SMACSS, nós talvez iríamos adicionar um ID featured na `div` exterior e então criar os estilos a partir disso. 
+
+<img src="images/featured-sem-smacss.PNG" alt="">
+
+Existem alguns pressupostos que fizemos com essa abordagem.
+
+
 
 Notas de rodapé:
 1 - A palavra usada no original é Layout que traduzi como dispor (...lay items out on a page...).
