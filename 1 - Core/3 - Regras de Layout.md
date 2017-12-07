@@ -51,7 +51,19 @@ Não considerando a abordagem SMACSS, nós talvez iríamos adicionar um ID featu
 
 <img src="images/featured-sem-smacss.PNG" alt="">
 
-Existem alguns pressupostos que fizemos com essa abordagem.
+Existem alguns pressupostos que podemos fazer com essa abordagem.
+
+1 - Haverá sempre apenas uma seção featured na página.
+2 - Os itens da lista estão flutuando na esquerda.
+3 - Os itens da lista possuem altura de 100px.
+
+Essas podem ser deduções lógicas. Este é um excelente exemplo de onde um site pode escapar dessa estrutura: é improvável que mude e improvável que fique mais complexo do que já é. *Talvez*. Sites grandes com uma taxa maior de mudanças possuem maiores chances de precisarem refatorar um componente em uma página e a necessidade de reendereçar o estilo que acompanha. 
+
+Olhe novamente o código de exemplo, definitivamente há algumas melhorias que podem ser feitas. O seletor de ID não precisava estar qualificado com um seletor de tag, e também como a lista é um descendente direto da `div`, o seletor child (>) poderia ter sido usado. 
+
+Veja como isso poderia ser reendereçado para nos dar maior flexibilidade. 
+
+Da perspectiva do Layout, tudo que nos importa é como os itens se relacionam entre si. Nós não nos importamos, necessariamente, com o design dos módulos em si, e nem queremos nos importar com o contexto que esse layout irá se encaixar. 
 
 
 
