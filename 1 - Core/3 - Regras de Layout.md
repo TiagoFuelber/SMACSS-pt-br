@@ -65,6 +65,17 @@ Veja como isso poderia ser reendereçado para nos dar maior flexibilidade.
 
 Da perspectiva do Layout, tudo que nos importa é como os itens se relacionam entre si. Nós não nos importamos, necessariamente, com o design dos módulos em si, e nem queremos nos importar com o contexto que esse layout irá se encaixar. 
 
+<img src="images/grid-module.PNG" alt="">
+
+Quais problemas nós introduzimos com essa abordagem e quais problemas nós introduzimos? (Muito raramente uma solução vai resolver 100% do problema)
+
+1 - O layout de grid pode ser aplicado à qualquer container para criar um layout de itens flutuando à esquerda. 
+2 - Nós diminuímos a *profundidade de aplicabilidade* em 1 (veja o caítulo sobre Profundiade de aplicabilidade para mais detalhes).
+3 - Nós reduzimos a especificidade dos seletores.
+4 - A obrigação de estipular uma altura foi removida. A altura da linha será a do maior item dessa linha. 
+
+E no outro lado da moeda, o que nós pioramos;
+
 
 
 Notas de rodapé:
