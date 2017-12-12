@@ -67,7 +67,7 @@ Da perspectiva do Layout, tudo que nos importa é como os itens se relacionam en
 
 <img src="images/grid-module.PNG" alt="">
 
-Quais problemas nós introduzimos com essa abordagem e quais problemas nós introduzimos? (Muito raramente uma solução vai resolver 100% do problema)
+Quais problemas nós resolvemos com essa abordagem e quais problemas nós introduzimos? (Muito raramente uma solução vai resolver 100% do problema)
 
 1 - O layout de grid pode ser aplicado à qualquer container para criar um layout de itens flutuando à esquerda. 
 2 - Nós diminuímos a *profundidade de aplicabilidade* em 1 (veja o caítulo sobre Profundiade de aplicabilidade para mais detalhes).
@@ -75,6 +75,11 @@ Quais problemas nós introduzimos com essa abordagem e quais problemas nós intr
 4 - A obrigação de estipular uma altura foi removida. A altura da linha será a do maior item dessa linha. 
 
 E no outro lado da moeda, o que nós pioramos;
+
+1 - Usando um child selector deixamos de fora o IE6. (Nós poderíamos contornar isso evitando o child seletor);
+2 - O CSS aumentou de tamanho e complexidade.
+
+O aumento de tamanho não pode ser contestado, mas é nominal. Agora que temos esse módulo reutilizável, nós podemos aplicá-lo em todo o site sem repetir código. O aumento na complexidade também é nominal. Tivemos que encontrar soluções para navegadores ultrapassados e criar alguns hacks que podem ser desaprovados por alguns. No entanto, os seletores são menos complexos que nos permitem extender esse layout enquanto o impacto da especificidade continua mínimo.
 
 
 
