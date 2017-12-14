@@ -4,7 +4,7 @@ Como comentado brevemente na seção anterior, um Módulo é um componente mais 
 
 Quando for definir as regras de um módulo, evite usar IDs e seletores de elemento, use apenas classes. Um módulo provavelmente conterá uma série de elementos e provavelmente haverá um desejo de usar seletores descendentes ou secundários para direcionar esses elementos.
 
-<img src="img/exemplo-modulo.PNG" alt="">
+<img src="images/exemplo-modulo.PNG" alt="">
 
 **Evite seletores de elemento** 
 
